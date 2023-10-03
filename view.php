@@ -26,6 +26,12 @@
         const data =
         <?php
         include 'auth/conn.php' ;
+        session_start();
+        $userprofile=$_SESSION['username'];
+        if($userprofile==true){}
+        else{
+            header("Location:index.php");
+        }
             if(isset($_POST['view_btn'])){
                 $sdate=$_POST['sdate'];
                 $edate=$_POST['edate'];

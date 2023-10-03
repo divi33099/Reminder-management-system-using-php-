@@ -1,5 +1,7 @@
 <?php
-    if(isset($_POST['login_btn'])){
+// start_session();
+
+if(isset($_POST['login_btn'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
         include 'auth/conn.php' ;
